@@ -1,0 +1,68 @@
+2026-11-11 16:26:57,057 | INFO | === Run 20261111-162657-f2d15e started ===
+2026-11-11 16:26:57,260 | INFO | Downloading yellow_tripdata_2024-01.parquet
+2026-11-11 16:26:58,826 | INFO | Downloading yellow_tripdata_2024-02.parquet
+2026-11-11 16:27:00,191 | INFO | Downloading yellow_tripdata_2024-03.parquet
+2026-11-11 16:27:01,926 | INFO | Downloading yellow_tripdata_2024-04.parquet
+2026-11-11 16:27:03,710 | INFO | Downloading yellow_tripdata_2024-05.parquet
+2026-11-11 16:27:05,726 | INFO | Downloading yellow_tripdata_2024-06.parquet
+2026-11-11 16:27:07,468 | INFO | Downloading green_tripdata_2024-01.parquet
+2026-11-11 16:27:07,787 | INFO | Downloading green_tripdata_2024-02.parquet
+2026-11-11 16:27:07,984 | INFO | Downloading green_tripdata_2024-03.parquet
+2026-11-11 16:27:08,284 | INFO | Downloading green_tripdata_2024-04.parquet
+2026-11-11 16:27:08,453 | INFO | Downloading green_tripdata_2024-05.parquet
+2026-11-11 16:27:08,716 | INFO | Downloading green_tripdata_2024-06.parquet
+2026-11-11 16:27:08,896 | INFO | Downloading fhv_tripdata_2024-01.parquet
+2026-11-11 16:27:10,290 | INFO | Downloading fhv_tripdata_2024-02.parquet
+2026-11-11 16:27:11,746 | INFO | Downloading fhv_tripdata_2024-03.parquet
+2026-11-11 16:27:13,251 | INFO | Downloading fhv_tripdata_2024-04.parquet
+2026-11-11 16:27:14,860 | INFO | Downloading fhv_tripdata_2024-05.parquet
+2026-11-11 16:27:16,287 | INFO | Downloading fhv_tripdata_2024-06.parquet
+2026-11-11 16:27:16,924 | INFO | Downloading fhvhv_tripdata_2024-01.parquet
+2026-11-11 16:27:30,298 | INFO | Downloading fhvhv_tripdata_2024-02.parquet
+2026-11-11 16:27:43,492 | INFO | Downloading fhvhv_tripdata_2024-03.parquet
+2026-11-11 16:28:15,541 | INFO | Downloading fhvhv_tripdata_2024-04.parquet
+2026-11-11 16:28:30,751 | INFO | Downloading fhvhv_tripdata_2024-05.parquet
+2026-11-11 16:28:45,384 | INFO | Downloading fhvhv_tripdata_2024-06.parquet
+2026-11-11 16:28:57,342 | INFO | Ingest: {'DOWNLOADED': 24}
+2026-11-11 16:28:57,343 | INFO | Step ingest SUCCESS {'files': 24, 'DOWNLOADED': 24}
+2026-11-11 16:28:57,601 | INFO | Transformed yellow_tripdata_2024-01.parquet: 2,964,624 raw -> 2,964,624 curated
+2026-11-11 16:28:57,785 | INFO | Transformed yellow_tripdata_2024-02.parquet: 3,007,526 raw -> 3,007,526 curated
+2026-11-11 16:28:58,001 | INFO | Transformed yellow_tripdata_2024-03.parquet: 3,582,628 raw -> 3,582,628 curated
+2026-11-11 16:28:58,201 | INFO | Transformed yellow_tripdata_2024-04.parquet: 3,514,289 raw -> 3,514,289 curated
+2026-11-11 16:28:58,434 | INFO | Transformed yellow_tripdata_2024-05.parquet: 3,723,833 raw -> 3,723,833 curated
+2026-11-11 16:28:58,662 | INFO | Transformed yellow_tripdata_2024-06.parquet: 3,539,193 raw -> 3,539,193 curated
+2026-11-11 16:28:58,686 | INFO | Transformed green_tripdata_2024-01.parquet: 56,551 raw -> 56,551 curated
+2026-11-11 16:28:58,699 | INFO | Transformed green_tripdata_2024-02.parquet: 53,577 raw -> 53,577 curated
+2026-11-11 16:28:58,712 | INFO | Transformed green_tripdata_2024-03.parquet: 57,457 raw -> 57,457 curated
+2026-11-11 16:28:58,726 | INFO | Transformed green_tripdata_2024-04.parquet: 56,471 raw -> 56,471 curated
+2026-11-11 16:28:58,740 | INFO | Transformed green_tripdata_2024-05.parquet: 61,003 raw -> 61,003 curated
+2026-11-11 16:28:58,752 | INFO | Transformed green_tripdata_2024-06.parquet: 54,748 raw -> 54,748 curated
+2026-11-11 16:28:58,868 | INFO | Transformed fhv_tripdata_2024-01.parquet: 1,290,116 raw -> 1,290,116 curated
+2026-11-11 16:28:58,989 | INFO | Transformed fhv_tripdata_2024-02.parquet: 1,176,093 raw -> 1,176,093 curated
+2026-11-11 16:28:59,139 | INFO | Transformed fhv_tripdata_2024-03.parquet: 1,469,352 raw -> 1,469,352 curated
+2026-11-11 16:28:59,270 | INFO | Transformed fhv_tripdata_2024-04.parquet: 1,444,626 raw -> 1,444,626 curated
+2026-11-11 16:28:59,401 | INFO | Transformed fhv_tripdata_2024-05.parquet: 1,352,502 raw -> 1,352,502 curated
+2026-11-11 16:28:59,526 | INFO | Transformed fhv_tripdata_2024-06.parquet: 1,386,539 raw -> 1,386,539 curated
+2026-11-11 16:29:01,475 | INFO | Transformed fhvhv_tripdata_2024-01.parquet: 19,663,930 raw -> 19,663,930 curated
+2026-11-11 16:29:02,882 | INFO | Transformed fhvhv_tripdata_2024-02.parquet: 19,359,148 raw -> 19,359,148 curated
+2026-11-11 16:29:04,052 | INFO | Transformed fhvhv_tripdata_2024-03.parquet: 21,280,788 raw -> 21,280,788 curated
+2026-11-11 16:29:04,920 | INFO | Transformed fhvhv_tripdata_2024-04.parquet: 19,733,038 raw -> 19,733,038 curated
+2026-11-11 16:29:05,813 | INFO | Transformed fhvhv_tripdata_2024-05.parquet: 20,704,538 raw -> 20,704,538 curated
+2026-11-11 16:29:06,780 | INFO | Transformed fhvhv_tripdata_2024-06.parquet: 20,123,226 raw -> 20,123,226 curated
+2026-11-11 16:29:06,780 | INFO | Transform: processed=24 skipped=0 schema_failed=0
+2026-11-11 16:29:06,788 | INFO | Step transform SUCCESS {'processed': 24, 'skipped': 0, 'schema_failed': 0, 'rows_written': 149655796, 'window': '2024-01-01..2024-07-01'}
+2026-11-11 16:29:18,288 | INFO | DQ: {'PASS': 193, 'WARN': 0, 'FAIL': 0}
+2026-11-11 16:29:18,291 | INFO | Step validate SUCCESS {'checks': 193, 'PASS': 193, 'WARN': 0, 'FAIL': 0}
+2026-11-11 16:29:30,597 | INFO | Analyze: most used = HVFHV (120,864,668)
+2026-11-11 16:29:30,608 | INFO | Step analyze SUCCESS {'most_used': 'HVFHV', 'valid_trips': 120864668, 'ratio_vs_second': 5.94}
+2026-11-11 16:29:30,608 | INFO | === Run 20261111-162657-f2d15e finished: most used = HVFHV ===
+2026-11-11 16:30:36,283 | INFO | === Run 20261111-163036-259e31 started ===
+2026-11-11 16:30:37,715 | INFO | Ingest: {'SKIPPED': 24}
+2026-11-11 16:30:37,716 | INFO | Step ingest SUCCESS {'files': 24, 'SKIPPED': 24}
+2026-11-11 16:30:37,724 | INFO | Transform: processed=0 skipped=24 schema_failed=0
+2026-11-11 16:30:37,725 | INFO | Step transform SUCCESS {'processed': 0, 'skipped': 24, 'schema_failed': 0, 'rows_written': 0, 'window': '2024-01-01..2024-07-01'}
+2026-11-11 16:30:38,988 | INFO | DQ: {'PASS': 193, 'WARN': 0, 'FAIL': 0}
+2026-11-11 16:30:38,993 | INFO | Step validate SUCCESS {'checks': 193, 'PASS': 193, 'WARN': 0, 'FAIL': 0}
+2026-11-11 16:30:50,740 | INFO | Analyze: most used = HVFHV (120,864,668)
+2026-11-11 16:30:50,747 | INFO | Step analyze SUCCESS {'most_used': 'HVFHV', 'valid_trips': 120864668, 'ratio_vs_second': 5.94}
+2026-11-11 16:30:50,747 | INFO | === Run 20261111-163036-259e31 finished: most used = HVFHV ===

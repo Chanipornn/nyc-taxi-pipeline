@@ -1,0 +1,5 @@
+taxi_type,raw_records,valid_records,share_pct
+HVFHV,120864668,120864668,80.76
+Yellow Taxi,20332093,20332054,13.59
+FHV,8119228,8119228,5.43
+Green Taxi,339807,339801,0.23

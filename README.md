@@ -3,11 +3,11 @@
 **คำถาม:** Which taxi type was the most used in the first half of 2024?
 **ชื่อ–รหัส:** ชนิภรณ์ คิมประเสริฐ 6709650243
 
-> **คำตอบ:** _(ใส่หลังรันจริง — ดู `reports/answer.md`)_  ผล Baseline (Submission 1) คือ **HVFHV = 120,864,668 trips**
+**คำตอบ:** **HVFHV** — 120,864,668 valid trips (มากกว่า Yellow Taxi อันดับ 2 ประมาณ 5.94 เท่า) ตรงกับผล Baseline (Submission 1)
 
 ## 1. ข้อมูลที่ใช้
 - แหล่ง: NYC TLC Trip Record Data — https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-- 4 ประเภท (Yellow, Green, FHV, HVFHV) x มกราคม–มิถุนายน 2024 = **24 ไฟล์ Parquet**
+- 4 ประเภท (Yellow, Green, FHV, HVFHV) x มกราคม–มิถุนายน 2024 = **24 ไฟล์ Parquet** (รวม 149,655,796 แถว)
 - นิยาม **most used** = taxi type ที่มี *valid trip records* มากที่สุดใน period
 
 ## 2. โครงสร้าง Pipeline
@@ -23,8 +23,10 @@
 
 ## 3. วิธีติดตั้งและรัน
 ```bash
-git clone <repo-url> && cd nyc-taxi-pipeline
-python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
+git clone https://github.com/Chanipornn/nyc-taxi-pipeline.git
+cd nyc-taxi-pipeline
+python3 -m venv .venv
+source .venv/bin/activate              # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python run_pipeline.py                 # ต้องมีอินเทอร์เน็ต (โหลด ~2-3 GB ครั้งแรก)
 python run_pipeline.py --offline       # ใช้ไฟล์ที่มีใน data/raw เท่านั้น
@@ -39,20 +41,32 @@ Exit code: `0` สำเร็จ, `2` data quality FAIL, `1` error อื่น
 | TLC แก้ไฟล์ / ลบไฟล์ใน `data/raw` | โหลดเฉพาะไฟล์นั้น (sha256 เปลี่ยน) และ transform เฉพาะ partition นั้น |
 | เพิ่มเดือนใหม่ (แก้ `period.end` ใน `config.yaml`) | โหลดเฉพาะไฟล์ใหม่ แต่ *transform ทำใหม่ทั้งหมด* เพราะ validity window เปลี่ยน (ดูข้อจำกัด) |
 
-## 5. หลักฐานการรัน (ต้องเติมหลังรันจริง)
-เก็บ log ไว้ที่ `docs/evidence/`:
-```bash
-python run_pipeline.py 2>&1 | tee docs/evidence/run1_first.txt     # DOWNLOADED 24
-python run_pipeline.py 2>&1 | tee docs/evidence/run2_rerun.txt     # SKIPPED 24, transform processed=0
-```
+## 5. หลักฐานการรัน
+รันจริงเมื่อ 11 พ.ย. 2569 บันทึก log ไว้ที่ `docs/evidence/`
+
+| รอบ | ไฟล์ log | run_id | ingest | transform | DQ |
+|---|---|---|---|---|---|
+| 1 (ครั้งแรก) | [`run1_first.txt`](docs/evidence/run1_first.txt) | `20261111-162657-f2d15e` | DOWNLOADED 24 | processed 24, rows_written 149,655,796 | PASS 193 / WARN 0 / FAIL 0 |
+| 2 (รันซ้ำ) | [`run2_rerun.txt`](docs/evidence/run2_rerun.txt) | `20261111-163036-259e31` | **SKIPPED 24** | **processed 0, skipped 24** | PASS 193 / WARN 0 / FAIL 0 |
+
+- ผลลัพธ์ทั้งสองรอบเท่ากัน: HVFHV = 120,864,668 trips (แสดงว่ารันซ้ำได้ผลเดิม)
+- Row reconciliation ผ่านทุกไฟล์: raw = curated (เช่น `fhvhv_tripdata_2024-01`: 19,663,930 → 19,663,930)
 - สถานะแต่ละ step: `reports/run_log.jsonl`
-- สถานะไฟล์ต้นทาง: `reports/manifest.csv`
-- ผล DQ: `reports/dq_report.csv` — _สรุปผลจริง: PASS=__ WARN=__ FAIL=__ (เติม)_
+- สถานะไฟล์ต้นทาง (url, ขนาด, sha256): `reports/manifest.csv`
+- ผล DQ ทั้ง 193 checks: `reports/dq_report.csv` / `.json`
+- จำนวนแถวที่ถูกติดธง invalid ทั้งหมดมีเพียง 45 แถว จาก 149,655,796 แถว (ตรวจได้จากคอลัมน์ `invalid_records` ใน `reports/monthly_summary.csv`) จึงไม่เกินเกณฑ์ WARN
 
 ## 6. ตัวอย่างข้อมูลและผลลัพธ์
 - `data/sample/trips_sample.csv` — ตัวอย่าง curated ~2,500 แถวต่อ type
 - `reports/monthly_summary.csv`, `reports/taxi_type_ranking.csv`, `reports/answer.md`, `reports/trips_by_type.png`
 - Trace กลับ: `answer.md` → `monthly_summary.csv` → `data/curated` (คอลัมน์ `source_file`) → `manifest.csv` (url, sha256) → TLC
+
+| Taxi type | Valid trips |
+|---|---:|
+| HVFHV | 120,864,668 |
+| Yellow Taxi | 20,332,054 |
+| FHV | 8,119,228 |
+| Green Taxi | 339,801 |
 
 ## 7. Data Quality Checks
 file completeness • source available • pickup column exists • row count > 0 •
@@ -73,12 +87,14 @@ out-of-range ratio • dropoff < pickup ratio • **valid recount จาก raw 
 | รูปแบบ | notebook เดียว | repo แยก module + config + tests |
 | การจัดเก็บ | query URL ตรง ไม่เก็บ | raw + curated Parquet + manifest |
 | Curated output | ไม่มี | `trips_unified` schema กลาง |
-| Data quality | null/ช่วงเวลา ตรวจด้วยตา | ~10 checks, PASS/WARN/FAIL, fail-fast |
+| Data quality | null/ช่วงเวลา ตรวจด้วยตา | 193 checks, PASS/WARN/FAIL, fail-fast |
 | รันซ้ำ/อัปเดต | ทำใหม่ทั้งหมด | ข้ามไฟล์ที่ไม่เปลี่ยน, idempotent |
 | หลักฐานสถานะ | output ใน notebook | manifest + run_log + dq_report |
 
+ผลลัพธ์ตรงกับ Submission 1 ทุกตัวเลข (HVFHV = 120,864,668) แสดงว่าการย้ายมาเป็น pipeline ไม่ทำให้คำตอบเปลี่ยน
+
 ## 10. Learning Reflection
-_(เขียนเองด้วยคำของตัวเอง 3–5 ประโยค เช่น: สิ่งที่เรียนรู้เรื่องความต่างของ schema, การทำ idempotent, การแยก WARN/FAIL, และสิ่งที่จะปรับปรุง)_
+จากงานนี้ผมเข้าใจว่า pipeline ต่างจาก notebook ตรงที่ต้องคิดถึงการรันซ้ำและการตรวจสอบตั้งแต่ออกแบบ ไม่ใช่แค่ทำให้ได้คำตอบครั้งเดียว เช่น การเก็บ manifest และ sha256 ทำให้รันรอบสองข้ามไฟล์ทั้ง 24 ไฟล์ได้และได้ผลเท่าเดิม ข้อมูลแต่ละ taxi type มีชื่อ column ต่างกัน (เช่น FHV ใช้ `PUlocationID`) จึงต้องทำ mapping ใน config แทนการเขียนฝังในโค้ด และการแยก WARN ออกจาก FAIL ช่วยให้ pipeline หยุดเฉพาะกรณีที่ข้อมูลไม่น่าเชื่อถือจริง ๆ ส่วนที่ยังต้องปรับปรุงคือการเปลี่ยน period ที่ทำให้ transform ใหม่ทั้งหมด และการตั้ง scheduler ให้รันอัตโนมัติ
 
 ## 11. ข้อจำกัดของ Pipeline ปัจจุบัน
 - ถ้าเปลี่ยน `period` ต้อง transform ใหม่ทั้งหมด เพราะกำหนด valid จากช่วงเวลารวม

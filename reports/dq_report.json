@@ -1,0 +1,1940 @@
+{
+  "run_id": "20261111-163036-259e31",
+  "summary": {
+    "PASS": 193,
+    "WARN": 0,
+    "FAIL": 0
+  },
+  "results": [
+    {
+      "check": "file_completeness",
+      "scope": "all",
+      "expected": 24,
+      "actual": 24,
+      "status": "PASS",
+      "detail": "จำนวนไฟล์ที่ต้องมี = taxi types x เดือนใน period",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "yellow_tripdata_2024-01.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "yellow_tripdata_2024-01.parquet",
+      "expected": "tpep_pickup_datetime",
+      "actual": "tpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "yellow_tripdata_2024-01.parquet",
+      "expected": "> 0",
+      "actual": 2964624,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "yellow_tripdata_2024-01.parquet",
+      "expected": 2964624,
+      "actual": "curated=2964624, valid+invalid=2964624",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "yellow_tripdata_2024-01.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "yellow_tripdata_2024-01.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000005 (15 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "yellow_tripdata_2024-01.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000019 (56 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "yellow_tripdata_2024-01.parquet",
+      "expected": 2964609,
+      "actual": 2964609,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "yellow_tripdata_2024-02.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "yellow_tripdata_2024-02.parquet",
+      "expected": "tpep_pickup_datetime",
+      "actual": "tpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "yellow_tripdata_2024-02.parquet",
+      "expected": "> 0",
+      "actual": 3007526,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "yellow_tripdata_2024-02.parquet",
+      "expected": 3007526,
+      "actual": "curated=3007526, valid+invalid=3007526",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "yellow_tripdata_2024-02.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "yellow_tripdata_2024-02.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000001 (2 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "yellow_tripdata_2024-02.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000002 (7 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "yellow_tripdata_2024-02.parquet",
+      "expected": 3007524,
+      "actual": 3007524,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "yellow_tripdata_2024-03.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "yellow_tripdata_2024-03.parquet",
+      "expected": "tpep_pickup_datetime",
+      "actual": "tpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "yellow_tripdata_2024-03.parquet",
+      "expected": "> 0",
+      "actual": 3582628,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "yellow_tripdata_2024-03.parquet",
+      "expected": 3582628,
+      "actual": "curated=3582628, valid+invalid=3582628",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "yellow_tripdata_2024-03.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "yellow_tripdata_2024-03.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000001 (2 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "yellow_tripdata_2024-03.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000033 (117 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "yellow_tripdata_2024-03.parquet",
+      "expected": 3582626,
+      "actual": 3582626,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "yellow_tripdata_2024-04.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "yellow_tripdata_2024-04.parquet",
+      "expected": "tpep_pickup_datetime",
+      "actual": "tpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "yellow_tripdata_2024-04.parquet",
+      "expected": "> 0",
+      "actual": 3514289,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "yellow_tripdata_2024-04.parquet",
+      "expected": 3514289,
+      "actual": "curated=3514289, valid+invalid=3514289",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "yellow_tripdata_2024-04.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "yellow_tripdata_2024-04.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000001 (4 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "yellow_tripdata_2024-04.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000020 (70 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "yellow_tripdata_2024-04.parquet",
+      "expected": 3514285,
+      "actual": 3514285,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "yellow_tripdata_2024-05.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "yellow_tripdata_2024-05.parquet",
+      "expected": "tpep_pickup_datetime",
+      "actual": "tpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "yellow_tripdata_2024-05.parquet",
+      "expected": "> 0",
+      "actual": 3723833,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "yellow_tripdata_2024-05.parquet",
+      "expected": 3723833,
+      "actual": "curated=3723833, valid+invalid=3723833",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "yellow_tripdata_2024-05.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "yellow_tripdata_2024-05.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000002 (7 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "yellow_tripdata_2024-05.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000011 (42 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "yellow_tripdata_2024-05.parquet",
+      "expected": 3723826,
+      "actual": 3723826,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "yellow_tripdata_2024-06.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "yellow_tripdata_2024-06.parquet",
+      "expected": "tpep_pickup_datetime",
+      "actual": "tpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "yellow_tripdata_2024-06.parquet",
+      "expected": "> 0",
+      "actual": 3539193,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "yellow_tripdata_2024-06.parquet",
+      "expected": 3539193,
+      "actual": "curated=3539193, valid+invalid=3539193",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "yellow_tripdata_2024-06.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "yellow_tripdata_2024-06.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000003 (9 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "yellow_tripdata_2024-06.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000002 (8 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "yellow_tripdata_2024-06.parquet",
+      "expected": 3539184,
+      "actual": 3539184,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "green_tripdata_2024-01.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "green_tripdata_2024-01.parquet",
+      "expected": "lpep_pickup_datetime",
+      "actual": "lpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "green_tripdata_2024-01.parquet",
+      "expected": "> 0",
+      "actual": 56551,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "green_tripdata_2024-01.parquet",
+      "expected": 56551,
+      "actual": "curated=56551, valid+invalid=56551",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "green_tripdata_2024-01.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "green_tripdata_2024-01.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000035 (2 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "green_tripdata_2024-01.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "green_tripdata_2024-01.parquet",
+      "expected": 56549,
+      "actual": 56549,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "green_tripdata_2024-02.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "green_tripdata_2024-02.parquet",
+      "expected": "lpep_pickup_datetime",
+      "actual": "lpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "green_tripdata_2024-02.parquet",
+      "expected": "> 0",
+      "actual": 53577,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "green_tripdata_2024-02.parquet",
+      "expected": 53577,
+      "actual": "curated=53577, valid+invalid=53577",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "green_tripdata_2024-02.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "green_tripdata_2024-02.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "green_tripdata_2024-02.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "green_tripdata_2024-02.parquet",
+      "expected": 53577,
+      "actual": 53577,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "green_tripdata_2024-03.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "green_tripdata_2024-03.parquet",
+      "expected": "lpep_pickup_datetime",
+      "actual": "lpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "green_tripdata_2024-03.parquet",
+      "expected": "> 0",
+      "actual": 57457,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "green_tripdata_2024-03.parquet",
+      "expected": 57457,
+      "actual": "curated=57457, valid+invalid=57457",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "green_tripdata_2024-03.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "green_tripdata_2024-03.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000035 (2 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "green_tripdata_2024-03.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "green_tripdata_2024-03.parquet",
+      "expected": 57455,
+      "actual": 57455,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "green_tripdata_2024-04.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "green_tripdata_2024-04.parquet",
+      "expected": "lpep_pickup_datetime",
+      "actual": "lpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "green_tripdata_2024-04.parquet",
+      "expected": "> 0",
+      "actual": 56471,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "green_tripdata_2024-04.parquet",
+      "expected": 56471,
+      "actual": "curated=56471, valid+invalid=56471",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "green_tripdata_2024-04.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "green_tripdata_2024-04.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "green_tripdata_2024-04.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "green_tripdata_2024-04.parquet",
+      "expected": 56471,
+      "actual": 56471,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "green_tripdata_2024-05.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "green_tripdata_2024-05.parquet",
+      "expected": "lpep_pickup_datetime",
+      "actual": "lpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "green_tripdata_2024-05.parquet",
+      "expected": "> 0",
+      "actual": 61003,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "green_tripdata_2024-05.parquet",
+      "expected": 61003,
+      "actual": "curated=61003, valid+invalid=61003",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "green_tripdata_2024-05.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "green_tripdata_2024-05.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000033 (2 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "green_tripdata_2024-05.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "green_tripdata_2024-05.parquet",
+      "expected": 61001,
+      "actual": 61001,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "green_tripdata_2024-06.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "green_tripdata_2024-06.parquet",
+      "expected": "lpep_pickup_datetime",
+      "actual": "lpep_pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "green_tripdata_2024-06.parquet",
+      "expected": "> 0",
+      "actual": 54748,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "green_tripdata_2024-06.parquet",
+      "expected": 54748,
+      "actual": "curated=54748, valid+invalid=54748",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "green_tripdata_2024-06.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "green_tripdata_2024-06.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "green_tripdata_2024-06.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "green_tripdata_2024-06.parquet",
+      "expected": 54748,
+      "actual": 54748,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhv_tripdata_2024-01.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhv_tripdata_2024-01.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhv_tripdata_2024-01.parquet",
+      "expected": "> 0",
+      "actual": 1290116,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhv_tripdata_2024-01.parquet",
+      "expected": 1290116,
+      "actual": "curated=1290116, valid+invalid=1290116",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhv_tripdata_2024-01.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhv_tripdata_2024-01.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhv_tripdata_2024-01.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhv_tripdata_2024-01.parquet",
+      "expected": 1290116,
+      "actual": 1290116,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhv_tripdata_2024-02.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhv_tripdata_2024-02.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhv_tripdata_2024-02.parquet",
+      "expected": "> 0",
+      "actual": 1176093,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhv_tripdata_2024-02.parquet",
+      "expected": 1176093,
+      "actual": "curated=1176093, valid+invalid=1176093",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhv_tripdata_2024-02.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhv_tripdata_2024-02.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhv_tripdata_2024-02.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhv_tripdata_2024-02.parquet",
+      "expected": 1176093,
+      "actual": 1176093,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhv_tripdata_2024-03.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhv_tripdata_2024-03.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhv_tripdata_2024-03.parquet",
+      "expected": "> 0",
+      "actual": 1469352,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhv_tripdata_2024-03.parquet",
+      "expected": 1469352,
+      "actual": "curated=1469352, valid+invalid=1469352",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhv_tripdata_2024-03.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhv_tripdata_2024-03.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhv_tripdata_2024-03.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhv_tripdata_2024-03.parquet",
+      "expected": 1469352,
+      "actual": 1469352,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhv_tripdata_2024-04.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhv_tripdata_2024-04.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhv_tripdata_2024-04.parquet",
+      "expected": "> 0",
+      "actual": 1444626,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhv_tripdata_2024-04.parquet",
+      "expected": 1444626,
+      "actual": "curated=1444626, valid+invalid=1444626",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhv_tripdata_2024-04.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhv_tripdata_2024-04.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhv_tripdata_2024-04.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhv_tripdata_2024-04.parquet",
+      "expected": 1444626,
+      "actual": 1444626,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhv_tripdata_2024-05.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhv_tripdata_2024-05.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhv_tripdata_2024-05.parquet",
+      "expected": "> 0",
+      "actual": 1352502,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhv_tripdata_2024-05.parquet",
+      "expected": 1352502,
+      "actual": "curated=1352502, valid+invalid=1352502",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhv_tripdata_2024-05.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhv_tripdata_2024-05.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhv_tripdata_2024-05.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhv_tripdata_2024-05.parquet",
+      "expected": 1352502,
+      "actual": 1352502,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhv_tripdata_2024-06.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhv_tripdata_2024-06.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhv_tripdata_2024-06.parquet",
+      "expected": "> 0",
+      "actual": 1386539,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhv_tripdata_2024-06.parquet",
+      "expected": 1386539,
+      "actual": "curated=1386539, valid+invalid=1386539",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhv_tripdata_2024-06.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhv_tripdata_2024-06.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhv_tripdata_2024-06.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhv_tripdata_2024-06.parquet",
+      "expected": 1386539,
+      "actual": 1386539,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhvhv_tripdata_2024-01.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhvhv_tripdata_2024-01.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhvhv_tripdata_2024-01.parquet",
+      "expected": "> 0",
+      "actual": 19663930,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhvhv_tripdata_2024-01.parquet",
+      "expected": 19663930,
+      "actual": "curated=19663930, valid+invalid=19663930",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-01.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhvhv_tripdata_2024-01.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-01.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhvhv_tripdata_2024-01.parquet",
+      "expected": 19663930,
+      "actual": 19663930,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhvhv_tripdata_2024-02.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhvhv_tripdata_2024-02.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhvhv_tripdata_2024-02.parquet",
+      "expected": "> 0",
+      "actual": 19359148,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhvhv_tripdata_2024-02.parquet",
+      "expected": 19359148,
+      "actual": "curated=19359148, valid+invalid=19359148",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-02.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhvhv_tripdata_2024-02.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-02.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhvhv_tripdata_2024-02.parquet",
+      "expected": 19359148,
+      "actual": 19359148,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhvhv_tripdata_2024-03.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhvhv_tripdata_2024-03.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhvhv_tripdata_2024-03.parquet",
+      "expected": "> 0",
+      "actual": 21280788,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhvhv_tripdata_2024-03.parquet",
+      "expected": 21280788,
+      "actual": "curated=21280788, valid+invalid=21280788",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-03.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhvhv_tripdata_2024-03.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-03.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhvhv_tripdata_2024-03.parquet",
+      "expected": 21280788,
+      "actual": 21280788,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhvhv_tripdata_2024-04.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhvhv_tripdata_2024-04.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhvhv_tripdata_2024-04.parquet",
+      "expected": "> 0",
+      "actual": 19733038,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhvhv_tripdata_2024-04.parquet",
+      "expected": 19733038,
+      "actual": "curated=19733038, valid+invalid=19733038",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-04.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhvhv_tripdata_2024-04.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-04.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhvhv_tripdata_2024-04.parquet",
+      "expected": 19733038,
+      "actual": 19733038,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhvhv_tripdata_2024-05.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhvhv_tripdata_2024-05.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhvhv_tripdata_2024-05.parquet",
+      "expected": "> 0",
+      "actual": 20704538,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhvhv_tripdata_2024-05.parquet",
+      "expected": 20704538,
+      "actual": "curated=20704538, valid+invalid=20704538",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-05.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhvhv_tripdata_2024-05.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-05.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhvhv_tripdata_2024-05.parquet",
+      "expected": 20704538,
+      "actual": 20704538,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "source_available",
+      "scope": "fhvhv_tripdata_2024-06.parquet",
+      "expected": "DOWNLOADED/SKIPPED/LOCAL",
+      "actual": "SKIPPED",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "schema_pickup_column",
+      "scope": "fhvhv_tripdata_2024-06.parquet",
+      "expected": "pickup_datetime",
+      "actual": "pickup_datetime",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_count_positive",
+      "scope": "fhvhv_tripdata_2024-06.parquet",
+      "expected": "> 0",
+      "actual": 20123226,
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "row_reconciliation",
+      "scope": "fhvhv_tripdata_2024-06.parquet",
+      "expected": 20123226,
+      "actual": "curated=20123226, valid+invalid=20123226",
+      "status": "PASS",
+      "detail": "ไม่มีแถวหายระหว่าง transform",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "null_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-06.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "out_of_range_ratio",
+      "scope": "fhvhv_tripdata_2024-06.parquet",
+      "expected": "<= 0.01",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "dropoff_before_pickup_ratio",
+      "scope": "fhvhv_tripdata_2024-06.parquet",
+      "expected": "<= 0.001",
+      "actual": "0.000000 (0 rows)",
+      "status": "PASS",
+      "detail": "",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    },
+    {
+      "check": "valid_recount_from_raw",
+      "scope": "fhvhv_tripdata_2024-06.parquet",
+      "expected": 20123226,
+      "actual": 20123226,
+      "status": "PASS",
+      "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
+      "run_id": "20261111-163036-259e31",
+      "checked_at": "2026-11-11T09:30:38+00:00"
+    }
+  ]
+}
