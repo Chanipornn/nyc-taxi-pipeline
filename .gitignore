@@ -1,0 +1,9 @@
+data/raw/*
+!data/raw/.gitkeep
+data/curated/*
+!data/curated/.gitkeep
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.part

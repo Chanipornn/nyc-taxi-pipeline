@@ -1,0 +1,50 @@
+# ตั้งค่าทั้งหมดของ pipeline อยู่ที่ไฟล์นี้ (path เป็น relative จากโฟลเดอร์ของไฟล์นี้)
+period:
+  start: "2024-01"      # เดือนแรกที่ต้องใช้ (รวม)
+  end: "2024-06"        # เดือนสุดท้ายที่ต้องใช้ (รวม)  -> first half of 2024
+
+base_url: "https://d37ci6vzurychx.cloudfront.net/trip-data"
+offline: false          # true = ไม่ใช้เน็ต ใช้ไฟล์ที่มีอยู่ใน data/raw เท่านั้น
+
+paths:
+  raw: data/raw
+  curated: data/curated
+  reports: reports
+  sample: data/sample
+
+# Mapping ชื่อ column ของแต่ละ taxi type -> schema กลาง
+# (ชื่อ column เทียบแบบไม่สนตัวพิมพ์เล็ก/ใหญ่ เพราะ FHV ใช้ PUlocationID / dropOff_datetime)
+taxi_types:
+  Yellow Taxi:
+    prefix: yellow_tripdata
+    pickup: tpep_pickup_datetime
+    dropoff: tpep_dropoff_datetime
+    pu_location: PULocationID
+    do_location: DOLocationID
+  Green Taxi:
+    prefix: green_tripdata
+    pickup: lpep_pickup_datetime
+    dropoff: lpep_dropoff_datetime
+    pu_location: PULocationID
+    do_location: DOLocationID
+  FHV:
+    prefix: fhv_tripdata
+    pickup: pickup_datetime
+    dropoff: dropOff_datetime
+    pu_location: PUlocationID
+    do_location: DOlocationID
+  HVFHV:
+    prefix: fhvhv_tripdata
+    pickup: pickup_datetime
+    dropoff: dropoff_datetime
+    pu_location: PULocationID
+    do_location: DOLocationID
+
+# เกณฑ์ data quality (สัดส่วนของ records ต่อไฟล์)
+dq:
+  null_pickup_warn_ratio: 0.01
+  out_of_range_warn_ratio: 0.01
+  dropoff_before_pickup_warn_ratio: 0.001
+  check_duplicates: false   # true = ตรวจแถวซ้ำ (ช้าลงกับ HVFHV)
+
+sample_rows_per_type: 2500
