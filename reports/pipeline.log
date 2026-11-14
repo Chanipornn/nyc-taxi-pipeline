@@ -66,3 +66,13 @@
 2026-11-11 16:30:50,740 | INFO | Analyze: most used = HVFHV (120,864,668)
 2026-11-11 16:30:50,747 | INFO | Step analyze SUCCESS {'most_used': 'HVFHV', 'valid_trips': 120864668, 'ratio_vs_second': 5.94}
 2026-11-11 16:30:50,747 | INFO | === Run 20261111-163036-259e31 finished: most used = HVFHV ===
+2026-11-14 19:43:20,655 | INFO | === Run 20261114-194320-628e86 started ===
+2026-11-14 19:43:33,007 | INFO | Ingest: {'SKIPPED': 24}
+2026-11-14 19:43:33,008 | INFO | Step ingest SUCCESS {'files': 24, 'SKIPPED': 24}
+2026-11-14 19:43:33,016 | INFO | Transform: processed=0 skipped=24 schema_failed=0
+2026-11-14 19:43:33,017 | INFO | Step transform SUCCESS {'processed': 0, 'skipped': 24, 'schema_failed': 0, 'rows_written': 0, 'window': '2024-01-01..2024-07-01'}
+2026-11-14 19:43:34,430 | INFO | DQ: {'PASS': 193, 'WARN': 0, 'FAIL': 0}
+2026-11-14 19:43:34,435 | INFO | Step validate SUCCESS {'checks': 193, 'PASS': 193, 'WARN': 0, 'FAIL': 0}
+2026-11-14 19:43:46,109 | INFO | Analyze: most used = HVFHV (120,864,668)
+2026-11-14 19:43:46,116 | INFO | Step analyze SUCCESS {'most_used': 'HVFHV', 'valid_trips': 120864668, 'ratio_vs_second': 5.94}
+2026-11-14 19:43:46,116 | INFO | === Run 20261114-194320-628e86 finished: most used = HVFHV ===

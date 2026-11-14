@@ -13,4 +13,4 @@
 
 **นิยาม:** most used = จำนวน valid trip records มากที่สุด (ไม่ใช่รายได้/ระยะทาง/ผู้โดยสาร)
 **ที่มา:** `data/curated/trips_unified` -> `reports/monthly_summary.csv` -> ตารางนี้
-(run_id: `20261111-163036-259e31`)
+(run_id: `20261114-194320-628e86`)

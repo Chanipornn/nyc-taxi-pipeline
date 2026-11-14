@@ -1,194 +1,194 @@
 check,scope,expected,actual,status,detail,run_id,checked_at
-file_completeness,all,24,24,PASS,จำนวนไฟล์ที่ต้องมี = taxi types x เดือนใน period,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,yellow_tripdata_2024-01.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,yellow_tripdata_2024-01.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,yellow_tripdata_2024-01.parquet,> 0,2964624,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,yellow_tripdata_2024-01.parquet,2964624,"curated=2964624, valid+invalid=2964624",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,yellow_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,yellow_tripdata_2024-01.parquet,<= 0.01,0.000005 (15 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,yellow_tripdata_2024-01.parquet,<= 0.001,0.000019 (56 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,yellow_tripdata_2024-01.parquet,2964609,2964609,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,yellow_tripdata_2024-02.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,yellow_tripdata_2024-02.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,yellow_tripdata_2024-02.parquet,> 0,3007526,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,yellow_tripdata_2024-02.parquet,3007526,"curated=3007526, valid+invalid=3007526",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,yellow_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,yellow_tripdata_2024-02.parquet,<= 0.01,0.000001 (2 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,yellow_tripdata_2024-02.parquet,<= 0.001,0.000002 (7 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,yellow_tripdata_2024-02.parquet,3007524,3007524,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,yellow_tripdata_2024-03.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,yellow_tripdata_2024-03.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,yellow_tripdata_2024-03.parquet,> 0,3582628,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,yellow_tripdata_2024-03.parquet,3582628,"curated=3582628, valid+invalid=3582628",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,yellow_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,yellow_tripdata_2024-03.parquet,<= 0.01,0.000001 (2 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,yellow_tripdata_2024-03.parquet,<= 0.001,0.000033 (117 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,yellow_tripdata_2024-03.parquet,3582626,3582626,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,yellow_tripdata_2024-04.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,yellow_tripdata_2024-04.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,yellow_tripdata_2024-04.parquet,> 0,3514289,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,yellow_tripdata_2024-04.parquet,3514289,"curated=3514289, valid+invalid=3514289",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,yellow_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,yellow_tripdata_2024-04.parquet,<= 0.01,0.000001 (4 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,yellow_tripdata_2024-04.parquet,<= 0.001,0.000020 (70 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,yellow_tripdata_2024-04.parquet,3514285,3514285,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,yellow_tripdata_2024-05.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,yellow_tripdata_2024-05.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,yellow_tripdata_2024-05.parquet,> 0,3723833,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,yellow_tripdata_2024-05.parquet,3723833,"curated=3723833, valid+invalid=3723833",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,yellow_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,yellow_tripdata_2024-05.parquet,<= 0.01,0.000002 (7 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,yellow_tripdata_2024-05.parquet,<= 0.001,0.000011 (42 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,yellow_tripdata_2024-05.parquet,3723826,3723826,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,yellow_tripdata_2024-06.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,yellow_tripdata_2024-06.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,yellow_tripdata_2024-06.parquet,> 0,3539193,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,yellow_tripdata_2024-06.parquet,3539193,"curated=3539193, valid+invalid=3539193",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,yellow_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,yellow_tripdata_2024-06.parquet,<= 0.01,0.000003 (9 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,yellow_tripdata_2024-06.parquet,<= 0.001,0.000002 (8 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,yellow_tripdata_2024-06.parquet,3539184,3539184,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,green_tripdata_2024-01.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,green_tripdata_2024-01.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,green_tripdata_2024-01.parquet,> 0,56551,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,green_tripdata_2024-01.parquet,56551,"curated=56551, valid+invalid=56551",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,green_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,green_tripdata_2024-01.parquet,<= 0.01,0.000035 (2 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,green_tripdata_2024-01.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,green_tripdata_2024-01.parquet,56549,56549,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,green_tripdata_2024-02.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,green_tripdata_2024-02.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,green_tripdata_2024-02.parquet,> 0,53577,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,green_tripdata_2024-02.parquet,53577,"curated=53577, valid+invalid=53577",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,green_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,green_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,green_tripdata_2024-02.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,green_tripdata_2024-02.parquet,53577,53577,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,green_tripdata_2024-03.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,green_tripdata_2024-03.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,green_tripdata_2024-03.parquet,> 0,57457,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,green_tripdata_2024-03.parquet,57457,"curated=57457, valid+invalid=57457",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,green_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,green_tripdata_2024-03.parquet,<= 0.01,0.000035 (2 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,green_tripdata_2024-03.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,green_tripdata_2024-03.parquet,57455,57455,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,green_tripdata_2024-04.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,green_tripdata_2024-04.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,green_tripdata_2024-04.parquet,> 0,56471,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,green_tripdata_2024-04.parquet,56471,"curated=56471, valid+invalid=56471",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,green_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,green_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,green_tripdata_2024-04.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,green_tripdata_2024-04.parquet,56471,56471,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,green_tripdata_2024-05.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,green_tripdata_2024-05.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,green_tripdata_2024-05.parquet,> 0,61003,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,green_tripdata_2024-05.parquet,61003,"curated=61003, valid+invalid=61003",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,green_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,green_tripdata_2024-05.parquet,<= 0.01,0.000033 (2 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,green_tripdata_2024-05.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,green_tripdata_2024-05.parquet,61001,61001,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,green_tripdata_2024-06.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,green_tripdata_2024-06.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,green_tripdata_2024-06.parquet,> 0,54748,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,green_tripdata_2024-06.parquet,54748,"curated=54748, valid+invalid=54748",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,green_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,green_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,green_tripdata_2024-06.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,green_tripdata_2024-06.parquet,54748,54748,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhv_tripdata_2024-01.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhv_tripdata_2024-01.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhv_tripdata_2024-01.parquet,> 0,1290116,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhv_tripdata_2024-01.parquet,1290116,"curated=1290116, valid+invalid=1290116",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhv_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhv_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhv_tripdata_2024-01.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhv_tripdata_2024-01.parquet,1290116,1290116,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhv_tripdata_2024-02.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhv_tripdata_2024-02.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhv_tripdata_2024-02.parquet,> 0,1176093,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhv_tripdata_2024-02.parquet,1176093,"curated=1176093, valid+invalid=1176093",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhv_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhv_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhv_tripdata_2024-02.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhv_tripdata_2024-02.parquet,1176093,1176093,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhv_tripdata_2024-03.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhv_tripdata_2024-03.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhv_tripdata_2024-03.parquet,> 0,1469352,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhv_tripdata_2024-03.parquet,1469352,"curated=1469352, valid+invalid=1469352",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhv_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhv_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhv_tripdata_2024-03.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhv_tripdata_2024-03.parquet,1469352,1469352,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhv_tripdata_2024-04.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhv_tripdata_2024-04.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhv_tripdata_2024-04.parquet,> 0,1444626,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhv_tripdata_2024-04.parquet,1444626,"curated=1444626, valid+invalid=1444626",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhv_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhv_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhv_tripdata_2024-04.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhv_tripdata_2024-04.parquet,1444626,1444626,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhv_tripdata_2024-05.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhv_tripdata_2024-05.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhv_tripdata_2024-05.parquet,> 0,1352502,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhv_tripdata_2024-05.parquet,1352502,"curated=1352502, valid+invalid=1352502",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhv_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhv_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhv_tripdata_2024-05.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhv_tripdata_2024-05.parquet,1352502,1352502,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhv_tripdata_2024-06.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhv_tripdata_2024-06.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhv_tripdata_2024-06.parquet,> 0,1386539,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhv_tripdata_2024-06.parquet,1386539,"curated=1386539, valid+invalid=1386539",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhv_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhv_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhv_tripdata_2024-06.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhv_tripdata_2024-06.parquet,1386539,1386539,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhvhv_tripdata_2024-01.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhvhv_tripdata_2024-01.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhvhv_tripdata_2024-01.parquet,> 0,19663930,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhvhv_tripdata_2024-01.parquet,19663930,"curated=19663930, valid+invalid=19663930",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhvhv_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhvhv_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhvhv_tripdata_2024-01.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhvhv_tripdata_2024-01.parquet,19663930,19663930,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhvhv_tripdata_2024-02.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhvhv_tripdata_2024-02.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhvhv_tripdata_2024-02.parquet,> 0,19359148,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhvhv_tripdata_2024-02.parquet,19359148,"curated=19359148, valid+invalid=19359148",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhvhv_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhvhv_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhvhv_tripdata_2024-02.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhvhv_tripdata_2024-02.parquet,19359148,19359148,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhvhv_tripdata_2024-03.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhvhv_tripdata_2024-03.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhvhv_tripdata_2024-03.parquet,> 0,21280788,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhvhv_tripdata_2024-03.parquet,21280788,"curated=21280788, valid+invalid=21280788",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhvhv_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhvhv_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhvhv_tripdata_2024-03.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhvhv_tripdata_2024-03.parquet,21280788,21280788,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhvhv_tripdata_2024-04.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhvhv_tripdata_2024-04.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhvhv_tripdata_2024-04.parquet,> 0,19733038,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhvhv_tripdata_2024-04.parquet,19733038,"curated=19733038, valid+invalid=19733038",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhvhv_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhvhv_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhvhv_tripdata_2024-04.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhvhv_tripdata_2024-04.parquet,19733038,19733038,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhvhv_tripdata_2024-05.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhvhv_tripdata_2024-05.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhvhv_tripdata_2024-05.parquet,> 0,20704538,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhvhv_tripdata_2024-05.parquet,20704538,"curated=20704538, valid+invalid=20704538",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhvhv_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhvhv_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhvhv_tripdata_2024-05.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhvhv_tripdata_2024-05.parquet,20704538,20704538,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-source_available,fhvhv_tripdata_2024-06.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-schema_pickup_column,fhvhv_tripdata_2024-06.parquet,pickup_datetime,pickup_datetime,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_count_positive,fhvhv_tripdata_2024-06.parquet,> 0,20123226,PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-row_reconciliation,fhvhv_tripdata_2024-06.parquet,20123226,"curated=20123226, valid+invalid=20123226",PASS,ไม่มีแถวหายระหว่าง transform,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-null_pickup_ratio,fhvhv_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-out_of_range_ratio,fhvhv_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-dropoff_before_pickup_ratio,fhvhv_tripdata_2024-06.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261111-163036-259e31,2026-11-11T09:30:38+00:00
-valid_recount_from_raw,fhvhv_tripdata_2024-06.parquet,20123226,20123226,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261111-163036-259e31,2026-11-11T09:30:38+00:00
+file_completeness,all,24,24,PASS,จำนวนไฟล์ที่ต้องมี = taxi types x เดือนใน period,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+source_available,yellow_tripdata_2024-01.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+schema_pickup_column,yellow_tripdata_2024-01.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+row_count_positive,yellow_tripdata_2024-01.parquet,> 0,2964624,PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+row_reconciliation,yellow_tripdata_2024-01.parquet,2964624,"curated=2964624, valid+invalid=2964624",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+null_pickup_ratio,yellow_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+out_of_range_ratio,yellow_tripdata_2024-01.parquet,<= 0.01,0.000005 (15 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+dropoff_before_pickup_ratio,yellow_tripdata_2024-01.parquet,<= 0.001,0.000019 (56 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+valid_recount_from_raw,yellow_tripdata_2024-01.parquet,2964609,2964609,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+source_available,yellow_tripdata_2024-02.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+schema_pickup_column,yellow_tripdata_2024-02.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+row_count_positive,yellow_tripdata_2024-02.parquet,> 0,3007526,PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+row_reconciliation,yellow_tripdata_2024-02.parquet,3007526,"curated=3007526, valid+invalid=3007526",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+null_pickup_ratio,yellow_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+out_of_range_ratio,yellow_tripdata_2024-02.parquet,<= 0.01,0.000001 (2 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+dropoff_before_pickup_ratio,yellow_tripdata_2024-02.parquet,<= 0.001,0.000002 (7 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:33+00:00
+valid_recount_from_raw,yellow_tripdata_2024-02.parquet,3007524,3007524,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,yellow_tripdata_2024-03.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,yellow_tripdata_2024-03.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,yellow_tripdata_2024-03.parquet,> 0,3582628,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,yellow_tripdata_2024-03.parquet,3582628,"curated=3582628, valid+invalid=3582628",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,yellow_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,yellow_tripdata_2024-03.parquet,<= 0.01,0.000001 (2 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,yellow_tripdata_2024-03.parquet,<= 0.001,0.000033 (117 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,yellow_tripdata_2024-03.parquet,3582626,3582626,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,yellow_tripdata_2024-04.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,yellow_tripdata_2024-04.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,yellow_tripdata_2024-04.parquet,> 0,3514289,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,yellow_tripdata_2024-04.parquet,3514289,"curated=3514289, valid+invalid=3514289",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,yellow_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,yellow_tripdata_2024-04.parquet,<= 0.01,0.000001 (4 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,yellow_tripdata_2024-04.parquet,<= 0.001,0.000020 (70 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,yellow_tripdata_2024-04.parquet,3514285,3514285,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,yellow_tripdata_2024-05.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,yellow_tripdata_2024-05.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,yellow_tripdata_2024-05.parquet,> 0,3723833,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,yellow_tripdata_2024-05.parquet,3723833,"curated=3723833, valid+invalid=3723833",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,yellow_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,yellow_tripdata_2024-05.parquet,<= 0.01,0.000002 (7 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,yellow_tripdata_2024-05.parquet,<= 0.001,0.000011 (42 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,yellow_tripdata_2024-05.parquet,3723826,3723826,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,yellow_tripdata_2024-06.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,yellow_tripdata_2024-06.parquet,tpep_pickup_datetime,tpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,yellow_tripdata_2024-06.parquet,> 0,3539193,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,yellow_tripdata_2024-06.parquet,3539193,"curated=3539193, valid+invalid=3539193",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,yellow_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,yellow_tripdata_2024-06.parquet,<= 0.01,0.000003 (9 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,yellow_tripdata_2024-06.parquet,<= 0.001,0.000002 (8 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,yellow_tripdata_2024-06.parquet,3539184,3539184,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,green_tripdata_2024-01.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,green_tripdata_2024-01.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,green_tripdata_2024-01.parquet,> 0,56551,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,green_tripdata_2024-01.parquet,56551,"curated=56551, valid+invalid=56551",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,green_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,green_tripdata_2024-01.parquet,<= 0.01,0.000035 (2 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,green_tripdata_2024-01.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,green_tripdata_2024-01.parquet,56549,56549,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,green_tripdata_2024-02.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,green_tripdata_2024-02.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,green_tripdata_2024-02.parquet,> 0,53577,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,green_tripdata_2024-02.parquet,53577,"curated=53577, valid+invalid=53577",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,green_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,green_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,green_tripdata_2024-02.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,green_tripdata_2024-02.parquet,53577,53577,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,green_tripdata_2024-03.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,green_tripdata_2024-03.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,green_tripdata_2024-03.parquet,> 0,57457,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,green_tripdata_2024-03.parquet,57457,"curated=57457, valid+invalid=57457",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,green_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,green_tripdata_2024-03.parquet,<= 0.01,0.000035 (2 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,green_tripdata_2024-03.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,green_tripdata_2024-03.parquet,57455,57455,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,green_tripdata_2024-04.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,green_tripdata_2024-04.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,green_tripdata_2024-04.parquet,> 0,56471,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,green_tripdata_2024-04.parquet,56471,"curated=56471, valid+invalid=56471",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,green_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,green_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,green_tripdata_2024-04.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,green_tripdata_2024-04.parquet,56471,56471,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,green_tripdata_2024-05.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,green_tripdata_2024-05.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,green_tripdata_2024-05.parquet,> 0,61003,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,green_tripdata_2024-05.parquet,61003,"curated=61003, valid+invalid=61003",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,green_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,green_tripdata_2024-05.parquet,<= 0.01,0.000033 (2 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,green_tripdata_2024-05.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,green_tripdata_2024-05.parquet,61001,61001,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,green_tripdata_2024-06.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,green_tripdata_2024-06.parquet,lpep_pickup_datetime,lpep_pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,green_tripdata_2024-06.parquet,> 0,54748,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,green_tripdata_2024-06.parquet,54748,"curated=54748, valid+invalid=54748",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,green_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,green_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,green_tripdata_2024-06.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,green_tripdata_2024-06.parquet,54748,54748,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhv_tripdata_2024-01.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhv_tripdata_2024-01.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhv_tripdata_2024-01.parquet,> 0,1290116,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhv_tripdata_2024-01.parquet,1290116,"curated=1290116, valid+invalid=1290116",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhv_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhv_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhv_tripdata_2024-01.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhv_tripdata_2024-01.parquet,1290116,1290116,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhv_tripdata_2024-02.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhv_tripdata_2024-02.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhv_tripdata_2024-02.parquet,> 0,1176093,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhv_tripdata_2024-02.parquet,1176093,"curated=1176093, valid+invalid=1176093",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhv_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhv_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhv_tripdata_2024-02.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhv_tripdata_2024-02.parquet,1176093,1176093,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhv_tripdata_2024-03.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhv_tripdata_2024-03.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhv_tripdata_2024-03.parquet,> 0,1469352,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhv_tripdata_2024-03.parquet,1469352,"curated=1469352, valid+invalid=1469352",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhv_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhv_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhv_tripdata_2024-03.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhv_tripdata_2024-03.parquet,1469352,1469352,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhv_tripdata_2024-04.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhv_tripdata_2024-04.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhv_tripdata_2024-04.parquet,> 0,1444626,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhv_tripdata_2024-04.parquet,1444626,"curated=1444626, valid+invalid=1444626",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhv_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhv_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhv_tripdata_2024-04.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhv_tripdata_2024-04.parquet,1444626,1444626,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhv_tripdata_2024-05.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhv_tripdata_2024-05.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhv_tripdata_2024-05.parquet,> 0,1352502,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhv_tripdata_2024-05.parquet,1352502,"curated=1352502, valid+invalid=1352502",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhv_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhv_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhv_tripdata_2024-05.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhv_tripdata_2024-05.parquet,1352502,1352502,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhv_tripdata_2024-06.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhv_tripdata_2024-06.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhv_tripdata_2024-06.parquet,> 0,1386539,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhv_tripdata_2024-06.parquet,1386539,"curated=1386539, valid+invalid=1386539",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhv_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhv_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhv_tripdata_2024-06.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhv_tripdata_2024-06.parquet,1386539,1386539,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhvhv_tripdata_2024-01.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhvhv_tripdata_2024-01.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhvhv_tripdata_2024-01.parquet,> 0,19663930,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhvhv_tripdata_2024-01.parquet,19663930,"curated=19663930, valid+invalid=19663930",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhvhv_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhvhv_tripdata_2024-01.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhvhv_tripdata_2024-01.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhvhv_tripdata_2024-01.parquet,19663930,19663930,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhvhv_tripdata_2024-02.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhvhv_tripdata_2024-02.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhvhv_tripdata_2024-02.parquet,> 0,19359148,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhvhv_tripdata_2024-02.parquet,19359148,"curated=19359148, valid+invalid=19359148",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhvhv_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhvhv_tripdata_2024-02.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhvhv_tripdata_2024-02.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhvhv_tripdata_2024-02.parquet,19359148,19359148,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhvhv_tripdata_2024-03.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhvhv_tripdata_2024-03.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhvhv_tripdata_2024-03.parquet,> 0,21280788,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhvhv_tripdata_2024-03.parquet,21280788,"curated=21280788, valid+invalid=21280788",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhvhv_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhvhv_tripdata_2024-03.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhvhv_tripdata_2024-03.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhvhv_tripdata_2024-03.parquet,21280788,21280788,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhvhv_tripdata_2024-04.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhvhv_tripdata_2024-04.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhvhv_tripdata_2024-04.parquet,> 0,19733038,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhvhv_tripdata_2024-04.parquet,19733038,"curated=19733038, valid+invalid=19733038",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhvhv_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhvhv_tripdata_2024-04.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhvhv_tripdata_2024-04.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhvhv_tripdata_2024-04.parquet,19733038,19733038,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhvhv_tripdata_2024-05.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhvhv_tripdata_2024-05.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhvhv_tripdata_2024-05.parquet,> 0,20704538,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhvhv_tripdata_2024-05.parquet,20704538,"curated=20704538, valid+invalid=20704538",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhvhv_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhvhv_tripdata_2024-05.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhvhv_tripdata_2024-05.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhvhv_tripdata_2024-05.parquet,20704538,20704538,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+source_available,fhvhv_tripdata_2024-06.parquet,DOWNLOADED/SKIPPED/LOCAL,SKIPPED,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+schema_pickup_column,fhvhv_tripdata_2024-06.parquet,pickup_datetime,pickup_datetime,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_count_positive,fhvhv_tripdata_2024-06.parquet,> 0,20123226,PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+row_reconciliation,fhvhv_tripdata_2024-06.parquet,20123226,"curated=20123226, valid+invalid=20123226",PASS,ไม่มีแถวหายระหว่าง transform,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+null_pickup_ratio,fhvhv_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+out_of_range_ratio,fhvhv_tripdata_2024-06.parquet,<= 0.01,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+dropoff_before_pickup_ratio,fhvhv_tripdata_2024-06.parquet,<= 0.001,0.000000 (0 rows),PASS,,20261114-194320-628e86,2026-11-14T12:43:34+00:00
+valid_recount_from_raw,fhvhv_tripdata_2024-06.parquet,20123226,20123226,PASS,นับ valid จาก raw ตรง ๆ เทียบกับ curated,20261114-194320-628e86,2026-11-14T12:43:34+00:00
