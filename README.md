@@ -12,7 +12,16 @@
 - นิยาม **most used** = taxi type ที่มี *valid trip records* มากที่สุดใน period
 
 ## 2. โครงสร้าง Pipeline
-ดูแผนภาพที่ [`docs/pipeline_diagram.md`](docs/pipeline_diagram.md)
+
+**Data Flow Diagram**
+
+![Pipeline data flow](docs/Data_Flow_Diagram.png)
+
+**Architecture**
+
+![Architecture](docs/Architecture.png)
+
+แผนภาพแบบ Mermaid และ schema ของ curated อยู่ที่ [`docs/pipeline_diagram.md`](docs/pipeline_diagram.md)
 
 | Step | ไฟล์ | หน้าที่ | Output |
 |---|---|---|---|
@@ -21,6 +30,17 @@
 | 3 Validate | `src/validate.py` | data quality checks (PASS/WARN/FAIL), FAIL = หยุด | `reports/dq_report.csv/.json` |
 | 4 Analyze | `src/analyze.py` | นับ valid trips จาก curated, สรุปคำตอบ, chart, sample | `reports/answer.md` ฯลฯ, `data/sample/` |
 | — | `run_pipeline.py`, `src/utils.py` | orchestration + run log | `reports/run_log.jsonl`, `reports/pipeline.log` |
+
+### อธิบาย Data Flow
+
+1. **Source:** ข้อมูลต้นทางคือไฟล์ Parquet รายเดือนจาก NYC TLC (4 ประเภท x 6 เดือน = 24 ไฟล์) ส่วนค่าตั้งต้นทั้งหมด (ช่วงเวลา, URL, การ map ชื่อ column, เกณฑ์ DQ) อยู่ใน `config.yaml`
+2. **Ingest:** ส่ง HEAD request เพื่อดู ETag / ขนาด / Last-Modified แล้วเทียบกับ `manifest.csv` ของรอบก่อน ถ้าไม่เปลี่ยนจะ `SKIPPED` ถ้าใหม่หรือเปลี่ยนจะดาวน์โหลดลง `data/raw` และบันทึกสถานะ + sha256 ลง manifest
+3. **Transform:** อ่านไฟล์ใน `data/raw` ด้วย DuckDB แล้วรวม 4 schema เป็น schema เดียว โดย map ชื่อ column ตาม config (เช่น `tpep_pickup_datetime`, `lpep_pickup_datetime`, `pickup_datetime` เป็น `pickup_datetime`) จากนั้นติดธง `invalid_reason` ให้แถวที่ไม่มีเวลารับผู้โดยสารหรืออยู่นอกช่วง Jan–Jun 2024 (ไม่ลบทิ้ง) แล้วเขียนเป็น Parquet แยกตาม `taxi` และ `month` ใน `data/curated` พร้อมบันทึก sha256 ลง `_state.json` เพื่อให้รอบถัดไปข้ามไฟล์ที่ไม่เปลี่ยน
+4. **Validate:** ตรวจคุณภาพ 193 รายการ เช่น ไฟล์ครบ, มี column ที่ต้องใช้, จำนวนแถว raw = curated = valid + invalid, สัดส่วนข้อมูลผิดปกติ, และนับ valid ใหม่จาก raw เทียบกับ curated ผลบันทึกใน `dq_report.csv` ถ้ามี **FAIL** pipeline จะหยุดและไม่สร้างคำตอบ (exit code 2)
+5. **Analyze:** ถ้าไม่มี FAIL จะนับ valid trips ต่อ taxi type จาก curated แล้วสร้าง `monthly_summary.csv`, `taxi_type_ranking.csv`, `answer.md`, กราฟ และตัวอย่างข้อมูลใน `data/sample`
+6. **Observability:** `run_pipeline.py` บันทึกสถานะของทุก Step ใน `run_log.jsonl` และ `pipeline.log` ตาม `run_id` ของแต่ละรอบ
+
+**จุดตัดสินใจหลักใน flow:** (1) ไฟล์เปลี่ยนหรือไม่ → โหลดใหม่ / ข้าม (2) DQ มี FAIL หรือไม่ → หยุด / ไปต่อ
 
 ## 3. วิธีติดตั้งและรัน
 ```bash
@@ -41,21 +61,23 @@ Exit code: `0` สำเร็จ, `2` data quality FAIL, `1` error อื่น
 | รันซ้ำโดยไม่มีอะไรเปลี่ยน | ingest = `SKIPPED` ทั้งหมด, transform `processed=0` |
 | ลบไฟล์ใน `data/raw` | ingest โหลดใหม่เฉพาะไฟล์ที่หาย, transform ข้ามเพราะ sha256 เท่าเดิม |
 | TLC แก้เนื้อหาไฟล์ | ingest โหลดใหม่เฉพาะไฟล์นั้น, transform ทำใหม่เฉพาะ partition ของไฟล์นั้น |
-| เพิ่มเดือนใหม่ (แก้ `period.end` ใน `config.yaml`) | ingest โหลดเฉพาะไฟล์ใหม่, transform ทำใหม่ทั้งหมด เพราะช่วงเวลา valid เปลี่ยน |
+| เพิ่มเดือนใหม่ (แก้ `period.end` ใน `config.yaml`) | ingest โหลดเฉพาะไฟล์ใหม่, transform ทำใหม่ทั้งหมด เพราะช่วงเวลา valid เปลี่ยน (ดูข้อจำกัด) |
+
 ## 5. หลักฐานการรัน
-รันจริงเมื่อ 11 พ.ย. 2569 บันทึก log ไว้ที่ `docs/evidence/`
+รันจริงเมื่อ 11 และ 14 พ.ย. 2569 บันทึก log ไว้ที่ `docs/evidence/`
 
 | รอบ | ไฟล์ log | run_id | ingest | transform | DQ |
 |---|---|---|---|---|---|
 | 1 (ครั้งแรก) | [`run1_first.txt`](docs/evidence/run1_first.txt) | `20261111-162657-f2d15e` | DOWNLOADED 24 | processed 24, rows_written 149,655,796 | PASS 193 / WARN 0 / FAIL 0 |
 | 2 (รันซ้ำ) | [`run2_rerun.txt`](docs/evidence/run2_rerun.txt) | `20261111-163036-259e31` | **SKIPPED 24** | **processed 0, skipped 24** | PASS 193 / WARN 0 / FAIL 0 |
+| 3 (อัปเดตบางส่วน: ลบ `green_tripdata_2024-03` ใน raw) | [`run3_partial_update.txt`](docs/evidence/run3_partial_update.txt) | `20261114-202805-a53cce` | **DOWNLOADED 1, SKIPPED 23** | processed 0, skipped 24 (sha256 เท่าเดิม) | PASS 193 / WARN 0 / FAIL 0 |
 
-- ผลลัพธ์ทั้งสองรอบเท่ากัน: HVFHV = 120,864,668 trips (แสดงว่ารันซ้ำได้ผลเดิม)
+- ผลลัพธ์ทั้งสามรอบเท่ากัน: HVFHV = 120,864,668 trips (แสดงว่ารันซ้ำและอัปเดตบางส่วนได้ผลเดิม)
 - Row reconciliation ผ่านทุกไฟล์: raw = curated (เช่น `fhvhv_tripdata_2024-01`: 19,663,930 → 19,663,930)
 - สถานะแต่ละ step: `reports/run_log.jsonl`
 - สถานะไฟล์ต้นทาง (url, ขนาด, sha256): `reports/manifest.csv`
 - ผล DQ ทั้ง 193 checks: `reports/dq_report.csv` / `.json`
-- จำนวนแถวที่ถูกติดธง invalid ทั้งหมดมีเพียง 45 แถว จาก 149,655,796 แถว (ตรวจได้จากคอลัมน์ `invalid_records` ใน `reports/monthly_summary.csv`) จึงไม่เกินเกณฑ์ WARN
+- จำนวนแถวที่ถูกติดธง invalid ทั้งหมดมีเพียง 45 แถว จาก 149,655,796 แถว (Yellow 39, Green 6 ตรวจได้จากคอลัมน์ `invalid_records` ใน `reports/monthly_summary.csv`) จึงไม่เกินเกณฑ์ WARN ทั้ง 45 แถวเป็นแถวที่อยู่นอกช่วงเวลา (`out_of_range`) ไม่มีแถวที่ timestamp ว่าง ซึ่งสอดคล้องกับ `missing_time = 0` ใน Submission 1
 
 ## 6. ตัวอย่างข้อมูลและผลลัพธ์
 - `data/sample/trips_sample.csv` — ตัวอย่าง curated ~2,500 แถวต่อ type
@@ -88,7 +110,7 @@ out-of-range ratio • dropoff < pickup ratio • **valid recount จาก raw 
 | รูปแบบ | notebook เดียว | repo แยก module + config + tests |
 | การจัดเก็บ | query URL ตรง ไม่เก็บ | raw + curated Parquet + manifest |
 | Curated output | ไม่มี | `trips_unified` schema กลาง |
-| Data quality | null/ช่วงเวลา ตรวจด้วยตา | 193 checks, PASS/WARN/FAIL, fail-fast |
+| Data quality | คำนวณ missing_time และนับ valid รายไฟล์ด้วย query แต่ไม่มีเกณฑ์ pass/fail และไม่หยุดเมื่อพบปัญหา | 193 checks, PASS/WARN/FAIL, fail-fast, reconciliation raw = curated |
 | รันซ้ำ/อัปเดต | ทำใหม่ทั้งหมด | ข้ามไฟล์ที่ไม่เปลี่ยน, idempotent |
 | หลักฐานสถานะ | output ใน notebook | manifest + run_log + dq_report |
 

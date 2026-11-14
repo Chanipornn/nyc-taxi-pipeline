@@ -76,3 +76,14 @@
 2026-11-14 19:43:46,109 | INFO | Analyze: most used = HVFHV (120,864,668)
 2026-11-14 19:43:46,116 | INFO | Step analyze SUCCESS {'most_used': 'HVFHV', 'valid_trips': 120864668, 'ratio_vs_second': 5.94}
 2026-11-14 19:43:46,116 | INFO | === Run 20261114-194320-628e86 finished: most used = HVFHV ===
+2026-11-14 20:28:05,084 | INFO | === Run 20261114-202805-a53cce started ===
+2026-11-14 20:28:05,917 | INFO | Downloading green_tripdata_2024-03.parquet
+2026-11-14 20:28:11,709 | INFO | Ingest: {'SKIPPED': 23, 'DOWNLOADED': 1}
+2026-11-14 20:28:11,711 | INFO | Step ingest SUCCESS {'files': 24, 'SKIPPED': 23, 'DOWNLOADED': 1}
+2026-11-14 20:28:11,722 | INFO | Transform: processed=0 skipped=24 schema_failed=0
+2026-11-14 20:28:11,724 | INFO | Step transform SUCCESS {'processed': 0, 'skipped': 24, 'schema_failed': 0, 'rows_written': 0, 'window': '2024-01-01..2024-07-01'}
+2026-11-14 20:28:13,117 | INFO | DQ: {'PASS': 193, 'WARN': 0, 'FAIL': 0}
+2026-11-14 20:28:13,129 | INFO | Step validate SUCCESS {'checks': 193, 'PASS': 193, 'WARN': 0, 'FAIL': 0}
+2026-11-14 20:28:25,055 | INFO | Analyze: most used = HVFHV (120,864,668)
+2026-11-14 20:28:25,069 | INFO | Step analyze SUCCESS {'most_used': 'HVFHV', 'valid_trips': 120864668, 'ratio_vs_second': 5.94}
+2026-11-14 20:28:25,069 | INFO | === Run 20261114-202805-a53cce finished: most used = HVFHV ===

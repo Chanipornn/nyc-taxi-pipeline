@@ -1,5 +1,5 @@
 {
-  "run_id": "20261114-194320-628e86",
+  "run_id": "20261114-202805-a53cce",
   "summary": {
     "PASS": 193,
     "WARN": 0,
@@ -13,8 +13,8 @@
       "actual": 24,
       "status": "PASS",
       "detail": "จำนวนไฟล์ที่ต้องมี = taxi types x เดือนใน period",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -23,8 +23,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -33,8 +33,8 @@
       "actual": "tpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -43,8 +43,8 @@
       "actual": 2964624,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -53,8 +53,8 @@
       "actual": "curated=2964624, valid+invalid=2964624",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -63,8 +63,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -73,8 +73,8 @@
       "actual": "0.000005 (15 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -83,8 +83,8 @@
       "actual": "0.000019 (56 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -93,8 +93,8 @@
       "actual": 2964609,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -103,8 +103,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -113,8 +113,8 @@
       "actual": "tpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -123,8 +123,8 @@
       "actual": 3007526,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -133,8 +133,8 @@
       "actual": "curated=3007526, valid+invalid=3007526",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -143,8 +143,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -153,8 +153,8 @@
       "actual": "0.000001 (2 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -163,8 +163,8 @@
       "actual": "0.000002 (7 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:33+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -173,8 +173,8 @@
       "actual": 3007524,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -183,8 +183,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -193,8 +193,8 @@
       "actual": "tpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -203,8 +203,8 @@
       "actual": 3582628,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -213,8 +213,8 @@
       "actual": "curated=3582628, valid+invalid=3582628",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -223,8 +223,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -233,8 +233,8 @@
       "actual": "0.000001 (2 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -243,8 +243,8 @@
       "actual": "0.000033 (117 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -253,8 +253,8 @@
       "actual": 3582626,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -263,8 +263,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -273,8 +273,8 @@
       "actual": "tpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -283,8 +283,8 @@
       "actual": 3514289,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -293,8 +293,8 @@
       "actual": "curated=3514289, valid+invalid=3514289",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -303,8 +303,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -313,8 +313,8 @@
       "actual": "0.000001 (4 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -323,8 +323,8 @@
       "actual": "0.000020 (70 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -333,8 +333,8 @@
       "actual": 3514285,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -343,8 +343,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -353,8 +353,8 @@
       "actual": "tpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -363,8 +363,8 @@
       "actual": 3723833,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -373,8 +373,8 @@
       "actual": "curated=3723833, valid+invalid=3723833",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -383,8 +383,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -393,8 +393,8 @@
       "actual": "0.000002 (7 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -403,8 +403,8 @@
       "actual": "0.000011 (42 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -413,8 +413,8 @@
       "actual": 3723826,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -423,8 +423,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -433,8 +433,8 @@
       "actual": "tpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -443,8 +443,8 @@
       "actual": 3539193,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -453,8 +453,8 @@
       "actual": "curated=3539193, valid+invalid=3539193",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -463,8 +463,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -473,8 +473,8 @@
       "actual": "0.000003 (9 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -483,8 +483,8 @@
       "actual": "0.000002 (8 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -493,8 +493,8 @@
       "actual": 3539184,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -503,8 +503,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -513,8 +513,8 @@
       "actual": "lpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -523,8 +523,8 @@
       "actual": 56551,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -533,8 +533,8 @@
       "actual": "curated=56551, valid+invalid=56551",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -543,8 +543,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -553,8 +553,8 @@
       "actual": "0.000035 (2 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -563,8 +563,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -573,8 +573,8 @@
       "actual": 56549,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -583,8 +583,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -593,8 +593,8 @@
       "actual": "lpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -603,8 +603,8 @@
       "actual": 53577,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -613,8 +613,8 @@
       "actual": "curated=53577, valid+invalid=53577",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -623,8 +623,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -633,8 +633,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -643,8 +643,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -653,18 +653,18 @@
       "actual": 53577,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
       "scope": "green_tripdata_2024-03.parquet",
       "expected": "DOWNLOADED/SKIPPED/LOCAL",
-      "actual": "SKIPPED",
+      "actual": "DOWNLOADED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -673,8 +673,8 @@
       "actual": "lpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -683,8 +683,8 @@
       "actual": 57457,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -693,8 +693,8 @@
       "actual": "curated=57457, valid+invalid=57457",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -703,8 +703,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -713,8 +713,8 @@
       "actual": "0.000035 (2 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -723,8 +723,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -733,8 +733,8 @@
       "actual": 57455,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -743,8 +743,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -753,8 +753,8 @@
       "actual": "lpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -763,8 +763,8 @@
       "actual": 56471,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -773,8 +773,8 @@
       "actual": "curated=56471, valid+invalid=56471",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -783,8 +783,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -793,8 +793,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -803,8 +803,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -813,8 +813,8 @@
       "actual": 56471,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -823,8 +823,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -833,8 +833,8 @@
       "actual": "lpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -843,8 +843,8 @@
       "actual": 61003,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -853,8 +853,8 @@
       "actual": "curated=61003, valid+invalid=61003",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -863,8 +863,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -873,8 +873,8 @@
       "actual": "0.000033 (2 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -883,8 +883,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -893,8 +893,8 @@
       "actual": 61001,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -903,8 +903,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -913,8 +913,8 @@
       "actual": "lpep_pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -923,8 +923,8 @@
       "actual": 54748,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -933,8 +933,8 @@
       "actual": "curated=54748, valid+invalid=54748",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -943,8 +943,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -953,8 +953,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -963,8 +963,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -973,8 +973,8 @@
       "actual": 54748,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -983,8 +983,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -993,8 +993,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1003,8 +1003,8 @@
       "actual": 1290116,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1013,8 +1013,8 @@
       "actual": "curated=1290116, valid+invalid=1290116",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1023,8 +1023,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1033,8 +1033,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1043,8 +1043,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1053,8 +1053,8 @@
       "actual": 1290116,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -1063,8 +1063,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1073,8 +1073,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1083,8 +1083,8 @@
       "actual": 1176093,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1093,8 +1093,8 @@
       "actual": "curated=1176093, valid+invalid=1176093",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1103,8 +1103,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1113,8 +1113,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1123,8 +1123,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1133,8 +1133,8 @@
       "actual": 1176093,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -1143,8 +1143,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1153,8 +1153,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1163,8 +1163,8 @@
       "actual": 1469352,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1173,8 +1173,8 @@
       "actual": "curated=1469352, valid+invalid=1469352",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1183,8 +1183,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1193,8 +1193,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1203,8 +1203,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1213,8 +1213,8 @@
       "actual": 1469352,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -1223,8 +1223,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1233,8 +1233,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1243,8 +1243,8 @@
       "actual": 1444626,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1253,8 +1253,8 @@
       "actual": "curated=1444626, valid+invalid=1444626",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1263,8 +1263,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1273,8 +1273,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1283,8 +1283,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1293,8 +1293,8 @@
       "actual": 1444626,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -1303,8 +1303,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1313,8 +1313,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1323,8 +1323,8 @@
       "actual": 1352502,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1333,8 +1333,8 @@
       "actual": "curated=1352502, valid+invalid=1352502",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1343,8 +1343,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1353,8 +1353,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1363,8 +1363,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1373,8 +1373,8 @@
       "actual": 1352502,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -1383,8 +1383,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1393,8 +1393,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1403,8 +1403,8 @@
       "actual": 1386539,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1413,8 +1413,8 @@
       "actual": "curated=1386539, valid+invalid=1386539",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1423,8 +1423,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1433,8 +1433,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1443,8 +1443,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1453,8 +1453,8 @@
       "actual": 1386539,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -1463,8 +1463,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1473,8 +1473,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1483,8 +1483,8 @@
       "actual": 19663930,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1493,8 +1493,8 @@
       "actual": "curated=19663930, valid+invalid=19663930",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1503,8 +1503,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1513,8 +1513,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1523,8 +1523,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1533,8 +1533,8 @@
       "actual": 19663930,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -1543,8 +1543,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1553,8 +1553,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1563,8 +1563,8 @@
       "actual": 19359148,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1573,8 +1573,8 @@
       "actual": "curated=19359148, valid+invalid=19359148",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1583,8 +1583,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1593,8 +1593,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1603,8 +1603,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1613,8 +1613,8 @@
       "actual": 19359148,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -1623,8 +1623,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1633,8 +1633,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1643,8 +1643,8 @@
       "actual": 21280788,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1653,8 +1653,8 @@
       "actual": "curated=21280788, valid+invalid=21280788",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1663,8 +1663,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1673,8 +1673,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1683,8 +1683,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1693,8 +1693,8 @@
       "actual": 21280788,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "source_available",
@@ -1703,8 +1703,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1713,8 +1713,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1723,8 +1723,8 @@
       "actual": 19733038,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1733,8 +1733,8 @@
       "actual": "curated=19733038, valid+invalid=19733038",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1743,8 +1743,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1753,8 +1753,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1763,8 +1763,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:12+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1773,8 +1773,8 @@
       "actual": 19733038,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "source_available",
@@ -1783,8 +1783,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1793,8 +1793,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1803,8 +1803,8 @@
       "actual": 20704538,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1813,8 +1813,8 @@
       "actual": "curated=20704538, valid+invalid=20704538",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1823,8 +1823,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1833,8 +1833,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1843,8 +1843,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1853,8 +1853,8 @@
       "actual": 20704538,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "source_available",
@@ -1863,8 +1863,8 @@
       "actual": "SKIPPED",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "schema_pickup_column",
@@ -1873,8 +1873,8 @@
       "actual": "pickup_datetime",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "row_count_positive",
@@ -1883,8 +1883,8 @@
       "actual": 20123226,
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "row_reconciliation",
@@ -1893,8 +1893,8 @@
       "actual": "curated=20123226, valid+invalid=20123226",
       "status": "PASS",
       "detail": "ไม่มีแถวหายระหว่าง transform",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "null_pickup_ratio",
@@ -1903,8 +1903,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "out_of_range_ratio",
@@ -1913,8 +1913,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "dropoff_before_pickup_ratio",
@@ -1923,8 +1923,8 @@
       "actual": "0.000000 (0 rows)",
       "status": "PASS",
       "detail": "",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     },
     {
       "check": "valid_recount_from_raw",
@@ -1933,8 +1933,8 @@
       "actual": 20123226,
       "status": "PASS",
       "detail": "นับ valid จาก raw ตรง ๆ เทียบกับ curated",
-      "run_id": "20261114-194320-628e86",
-      "checked_at": "2026-11-14T12:43:34+00:00"
+      "run_id": "20261114-202805-a53cce",
+      "checked_at": "2026-11-14T13:28:13+00:00"
     }
   ]
 }
