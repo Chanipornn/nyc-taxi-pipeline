@@ -1,6 +1,7 @@
 # NYC Taxi — Reproducible Data Pipeline (Submission 2)
 
 **คำถาม:** Which taxi type was the most used in the first half of 2024?
+
 **ชื่อ–รหัส:** ชนิภรณ์ คิมประเสริฐ 6709650243
 
 **คำตอบ:** **HVFHV** — 120,864,668 valid trips (มากกว่า Yellow Taxi อันดับ 2 ประมาณ 5.94 เท่า) ตรงกับผล Baseline (Submission 1)
