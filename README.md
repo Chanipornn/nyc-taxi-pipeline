@@ -39,9 +39,9 @@ Exit code: `0` สำเร็จ, `2` data quality FAIL, `1` error อื่น
 | สถานการณ์ | พฤติกรรม |
 |---|---|
 | รันซ้ำโดยไม่มีอะไรเปลี่ยน | ingest = `SKIPPED` ทั้งหมด, transform `processed=0` |
-| TLC แก้ไฟล์ / ลบไฟล์ใน `data/raw` | โหลดเฉพาะไฟล์นั้น (sha256 เปลี่ยน) และ transform เฉพาะ partition นั้น |
-| เพิ่มเดือนใหม่ (แก้ `period.end` ใน `config.yaml`) | โหลดเฉพาะไฟล์ใหม่ แต่ *transform ทำใหม่ทั้งหมด* เพราะ validity window เปลี่ยน (ดูข้อจำกัด) |
-
+| ลบไฟล์ใน `data/raw` | ingest โหลดใหม่เฉพาะไฟล์ที่หาย, transform ข้ามเพราะ sha256 เท่าเดิม |
+| TLC แก้เนื้อหาไฟล์ | ingest โหลดใหม่เฉพาะไฟล์นั้น, transform ทำใหม่เฉพาะ partition ของไฟล์นั้น |
+| เพิ่มเดือนใหม่ (แก้ `period.end` ใน `config.yaml`) | ingest โหลดเฉพาะไฟล์ใหม่, transform ทำใหม่ทั้งหมด เพราะช่วงเวลา valid เปลี่ยน |
 ## 5. หลักฐานการรัน
 รันจริงเมื่อ 11 พ.ย. 2569 บันทึก log ไว้ที่ `docs/evidence/`
 
@@ -97,7 +97,7 @@ out-of-range ratio • dropoff < pickup ratio • **valid recount จาก raw 
 ## 10. Learning Reflection
 จากงานนี้เข้าใจว่า pipeline ต่างจาก notebook ตรงที่ต้องคิดถึงการรันซ้ำและการตรวจสอบตั้งแต่ออกแบบ ไม่ใช่แค่ทำให้ได้คำตอบครั้งเดียว เช่น การเก็บ manifest และ sha256 ทำให้รันรอบสองข้ามไฟล์ทั้ง 24 ไฟล์ได้และได้ผลเท่าเดิม ข้อมูลแต่ละ taxi type มีชื่อ column ต่างกัน (เช่น FHV ใช้ `PUlocationID`) จึงต้องทำ mapping ใน config แทนการเขียนฝังในโค้ด และการแยก WARN ออกจาก FAIL ช่วยให้ pipeline หยุดเฉพาะกรณีที่ข้อมูลไม่น่าเชื่อถือจริง ๆ ส่วนที่ยังต้องปรับปรุงคือการเปลี่ยน period ที่ทำให้ transform ใหม่ทั้งหมด และการตั้ง scheduler ให้รันอัตโนมัติ
 
-## 11. ข้อจำกัดของ Pipeline ปัจจุบัน
+## 11. Limitations Pipeline ปัจจุบัน
 - ถ้าเปลี่ยน `period` ต้อง transform ใหม่ทั้งหมด เพราะกำหนด valid จากช่วงเวลารวม
 - ตรวจการเปลี่ยนของไฟล์จาก header ของ TLC; ถ้า TLC แก้ไฟล์โดย header ไม่เปลี่ยนจะตรวจไม่พบ
 - นับ trip records ไม่ใช่ "ผู้ใช้จริง"; HVFHV (Uber/Lyft ฯลฯ) และ Yellow อาจนิยามหนึ่ง record ต่างกัน
