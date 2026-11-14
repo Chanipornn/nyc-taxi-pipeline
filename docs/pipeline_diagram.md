@@ -7,7 +7,7 @@ flowchart LR
   A["NYC TLC<br/>4 types x 6 months<br/>24 Parquet files"] --> B["1. Ingest<br/>HEAD + ETag check<br/>skip unchanged"]
   B --> C[("data/raw")]
   B --> M[("reports/manifest.csv")]
-  C --> D["2. Transform<br/>map 4 schemas -> 1 schema<br/>flag invalid rows"]
+  C --> D["2. Transform<br/>map 4 schemas to 1 schema<br/>flag invalid rows"]
   M --> D
   D --> E[("data/curated/trips_unified<br/>taxi=*/month=*/data.parquet")]
   D --> S[("_state.json<br/>sha256 + window")]
